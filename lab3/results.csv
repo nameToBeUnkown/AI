@@ -1,0 +1,7 @@
+Task,Model,Parameters,Val_Loss,Accuracy,F1,Latency_ms
+mini-GPT,minigpt_v1 (context=32 embed=64 layers=2),152K,5.9139,-,-,-
+mini-GPT,minigpt_v2 (context=48 embed=96 layers=3),374K,5.6393,-,-,-
+sentiment-analysis (default argmax),tabularisai/multilingual-sentiment-analysis,66M,-,0.9000,0.9091,16.88
+sentiment-analysis (default argmax),nlptown/bert-base-multilingual-uncased-sentiment,167M,-,0.9500,0.9474,32.06
+sentiment-analysis (threshold score >= 0.60),nlptown/bert-base-multilingual-uncased-sentiment,167M,-,1.0000,1.0000,32.10
+sentiment-analysis (margin top1-top2 >= 0.25),nlptown/bert-base-multilingual-uncased-sentiment,167M,-,1.0000,1.0000,32.15
